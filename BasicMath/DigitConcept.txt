@@ -18,3 +18,11 @@ while(N>0){
     last_digit = N % 10;
     N = N / 10;
 }
+
+3 ways to get the number of digit 
+
+1--- By counting the modulo operator in while loop
+2-- By counting the divide operator in while loop
+3-- By using log function to the number then add 1
+    log(7789)+1 = 3.81.. + 1 = 4.81
+    int(4.81) = 4
