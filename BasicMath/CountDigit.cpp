@@ -4,8 +4,10 @@ using namespace std;
 //COUNT DIGIT WITH LOG
 int countDigitWithLog(int N){
 
-    int count = (int)(log10(N)+1);
+    int count = (int)(log10(N)+1);  //(int)--> This cast converts the result to an integer type. Since log10(N) can return a floating-point number, casting to (int) rounds down any decimal part, although in this case, it would always result in an integer after the addition.
     return count;
+
+    // TC--> O(LOG 10 (N))
 }
 
 //COUNT DIGIT WITH DIVIDE
