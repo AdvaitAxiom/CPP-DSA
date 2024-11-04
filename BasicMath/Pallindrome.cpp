@@ -10,6 +10,9 @@ bool isPalindrome(int Num){
     int Num2 = Num;
     while(Num>0){
         int last = Num % 10;
+        if ((Num > INT_MAX / 10) || (Num < INT_MIN / 10)) {
+                return 0; // Return 0 if reversing x would cause overflow/underflow
+            }
         reversed = (reversed*10) + last;
         Num /= 10;
     }
