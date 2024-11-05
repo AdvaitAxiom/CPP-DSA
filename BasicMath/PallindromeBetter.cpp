@@ -6,15 +6,15 @@ using namespace std;
 //1234--->4321 (x)
 
 bool isPalindrome(int Num){
-    long long reversed = 0;
-    int Num2 = Num;
-    while(Num>0){
-       
-        int last = Num % 10;
-        reversed = (reversed*10) + last;
-        Num /= 10;
-    }
-    return Num2 == reversed;
+   if(Num < 0 ) return false;
+   long long a = Num;
+   long long ans = 0;
+
+   while(Num>0){
+    ans = 10*ans+Num%10;
+    Num = Num/10;
+   }
+   return a == ans;
 }
 int main(){
     int Number;
