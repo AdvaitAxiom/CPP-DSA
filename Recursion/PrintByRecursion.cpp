@@ -7,14 +7,15 @@ using namespace std;
 
 //RECURSION TREE
 
-int counting = 0;//Global variable
+int counting = 1;//Global variable
 void f(){
 
     //Base Condition
-    if(counting == 10){
+    //  if(n<=0)return;    //For neg number(n=input number)
+    if(counting > 10){
         return;
     }
-    cout<<counting;
+    cout<<counting<<" ";
     counting ++;
     f();
     
