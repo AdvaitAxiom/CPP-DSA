@@ -4,7 +4,7 @@ using namespace std;
 //Multiple print---->cout should be out of base condition
 //Print once after calculating --->cout should be in base condition
 
-//Parameterised Way
+//Parameterised Way/Imperative
 void f(int sum,int num){
     if(num<1){
         cout<<sum;
