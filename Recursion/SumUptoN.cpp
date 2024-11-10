@@ -24,5 +24,6 @@ int main(){
     cout<<"Enter the number: ";
     cin>>num;
     f(0,num);
+    cout<<endl<<func(num);
     return 0;
 }
