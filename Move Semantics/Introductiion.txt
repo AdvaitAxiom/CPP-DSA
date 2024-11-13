@@ -1,0 +1,83 @@
+1. Added to c++ with the c++ 11 standard.
+
+2. Allows us to avoid unnecessary copies when working with temporary objects.
+
+In C++, there was a costly and unnecessary deep copies that can happen implicitly when objects are passes by value.
+
+T foo(T obj){   //Pass by value-->> temp obj create (can be ignored by pass by reference)
+    T temp;
+    ...
+    ...
+    return temp;    //COPY -->temp object (WE CAN USE move (temp); instead of temp)
+}
+
+int main(){     //client code
+    T f = foo(obj);
+}
+
+//Here in this code snippet when we pass any object or any argument by value then there is a copy created in order for the function to use this oject and a bottleneck created when we return the object to the main method another copy is made to the object f. So the previous temp object is deleted and left unused.
+
+We can ignore the first temp obj by using pass by ref but cant get rid of the temp obj of the return statement.
+
+
+
+L-VALUE & R-VALUE----------------------->>>>>>>>>
+
+L-value-->>>
+    1. A value that resides in memory(heap or stack)
+    2. lvalue is addressable
+    3. Can't be moved
+    4. It can be reassigned 
+
+R-value-->>>
+    1. It resides only on the right side of an assignment expression such as a literal or a temporary which is intended to be non-modifiable.
+    2. It can be moved i modern cpp
+
+L-VALUE & R-VALUE REFERENCES----------------------->>>>>>>>>
+
+L-value reference--->>>
+    1.Normal/Old REFERENCES
+    2.Can only be bound to lvalues but not rvalues
+            eg. int i = 10;
+                int& x =i;  (lvalue ref. bound with lvalue i)
+                int& x = 10; (X)(lvalue ref. can't be binded with rvalue)
+    3.However we can bind an rvalue to a const lvalue reference
+            eg. const int& x = 10;
+
+Implementation:-----
+
+    int foo(int& i){
+        ....
+    }
+
+    foo(10); (CANT be done)
+
+    int i =10;
+    foo(i); (Can be done)
+
+    But-----------------------
+
+    int foo(const int& i){
+        ....
+    }
+
+    foo(10); (Can be done)
+
+    int i =10;
+    foo(i); (Can be done)
+
+R-value reference--->>>
+    1.Introduced in c++ 11 standard
+    2.Bind only to rvalues
+    3.Represented with &&
+        eg. int x = 10;
+            int&& rr = 10;
+            int& rr2 = foo(10); (But int& x = foo(10); is not acceptable)
+    4.An expression is an rvalue if it results in a temporary object
+
+
+    BOTTLE-NECK AND MOVE SEMANTICS
+    https://chatgpt.com/share/67350246-5dec-8002-825d-81b965ca92ef
+
+    Go to---------->> rValue_lValue_references_example.cpp
+
