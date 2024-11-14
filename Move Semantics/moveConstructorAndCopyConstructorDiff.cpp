@@ -7,9 +7,9 @@ class A{
         p = new int[100];
         cout<<"Default Constructor"<< endl;
     }
-    A(const A& aobj){
+    A(const A& aobj){   //copy
         p = new int[100];
-        //copy everything fromaobj to *this
+        //copy everything from aobj to *this
         for(auto i =0;i<100;++i){
             p[i] = aobj.p[i];
         }
