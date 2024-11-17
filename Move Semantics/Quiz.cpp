@@ -12,5 +12,7 @@ int main(){
     f(move(i)); //rvalue 
     f(static_cast<int&&>(i));   //rvalue
     // Type-casting i explicitely to rvalue reference 
+
+    
     return 0;
 }
