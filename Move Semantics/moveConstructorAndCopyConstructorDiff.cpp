@@ -13,7 +13,8 @@ class A{
         for(auto i =0;i<100;++i){
             p[i] = aobj.p[i];
         }
-        cout<<"Copy Constructor"<<endl;}
+        cout<<"Copy Constructor"<<endl;
+        }
     A(const A&& obj):p(obj.p){cout<<"Move Constructor"<<endl;}
 };
 int main(){
