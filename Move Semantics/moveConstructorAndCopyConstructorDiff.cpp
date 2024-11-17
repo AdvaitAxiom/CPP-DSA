@@ -17,6 +17,8 @@ class A{
         }
     A(const A&& obj):p(obj.p){cout<<"Move Constructor"<<endl;}
 };
+
+
 int main(){
     A a;    //Default constructor is called
     A b = a;    //Copy constructor
