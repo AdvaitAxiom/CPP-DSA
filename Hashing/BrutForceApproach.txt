@@ -1,0 +1,23 @@
+Here there is an array a[] = 1,2,1,3,5
+Let us find the count of 1.
+Let's take a variable var =1
+Let's take another variable count and initialize it with 0; count =0;
+then a pointer p which iterates over each elements of the array and compare the value with the variable var.
+If it matches then count ++;
+Lastly get the count value
+
+
+PSEUDO CODE
+
+int j(number, a[]){
+    count =0;
+    for(i =0; i<size;i++){
+        if(a[i] == number){
+            count++;
+        }
+    }
+    return count;
+}
+
+TIME CMPLEXITY =  O(Size) for 1 element
+For all elements it will be--->> no. of elements*O(size)--->> O(no. of ele. * size)(Can be of exponential)
