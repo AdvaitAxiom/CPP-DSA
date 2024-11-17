@@ -3,6 +3,7 @@ using namespace std;
 void f(int& i){cout<<"L-Value f"<<endl;}
 void f(int&& i){cout<<"R-Value f"<<endl;}
 int main(){
+    
     int i =10; //i->lvalue & 10 r-value
 
     f(i);   //L-Value f
