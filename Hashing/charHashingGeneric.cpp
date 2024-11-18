@@ -9,7 +9,7 @@ int main(){
     int qu;
     cout<< "Enter the number of queries: "<<endl;
     cin >> qu;
-
+//PreCompute
     int hash[256] = {0};
 
     for(int i = 0; i<str.size(); i++){
