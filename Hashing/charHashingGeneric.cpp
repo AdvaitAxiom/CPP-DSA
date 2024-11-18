@@ -13,7 +13,7 @@ int main(){
     int hash[256] = {0};
 
     for(int i = 0; i<str.size(); i++){
-        hash[str[i]]++;     //hash[int]--> so if we hash[char]; the char will be auto casted to its int value
+        hash[str[i]]++;     //hash[int]--> so if we hash[char]; the char will be auto casted to its int value 
     }
 
     while(qu--){
