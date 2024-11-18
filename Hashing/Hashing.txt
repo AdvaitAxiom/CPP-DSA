@@ -1,0 +1,11 @@
+An array is given a[]
+Create a hash array(Frequency array) initializing it with 0;{Hash array size == Highest element of array a[]}
+Do precalculation:
+    In hash array every element is counting the same number in the main array a[]
+        eg: if in a[] has two 1 then the hasharray[1] ==2
+
+        So an iterator will go over a[] and for an element i it will point the hasharray[i] and increment it by 1
+
+hash[1] == hasharray[1] == ans
+
+
