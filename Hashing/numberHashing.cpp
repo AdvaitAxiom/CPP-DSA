@@ -42,5 +42,12 @@ int main(){
         cout<<hash[number]<<endl;
     }
 
+//****** WE CAN DECLARE ARRAY UPTO 1e6 WITHIN MAIN---->>arr[10^6]
+//OVER THAN THAT IT WILL THROW A SEGMENTATION FAULT ERROR
+//BUT GLOBALLY WE CAN DECLARE ARRAY UPTO 1e7---->> arr[10^7];
+
+// bool--> arr[1e7] (main)
+//bool --> arr[1e8] (globally) 
+
     return 0;
 }
