@@ -3,7 +3,7 @@
 using namespace std;
 
     // Function to count the frequency of all elements from 1 to N in the array.
-    
+
     vector<int> frequencyCount(vector<int>& arr) {
         // code here
         vector<int> vec={0};
@@ -36,5 +36,3 @@ int main() {
 
     return 0;
 }
-
-// } Driver Code Ends
