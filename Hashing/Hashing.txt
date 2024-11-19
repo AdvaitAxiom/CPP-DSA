@@ -6,6 +6,7 @@ Do precalculation:
 
         So an iterator will go over a[] and for an element i it will point the hasharray[i] and increment it by 1
 
+
 hash[1] == hasharray[1] == ans
 
 
