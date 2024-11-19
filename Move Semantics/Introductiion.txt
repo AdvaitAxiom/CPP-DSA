@@ -77,7 +77,8 @@ R-value reference--->>>
     4.An expression is an rvalue if it results in a temporary object
 
 
-    BOTTLE-NECK AND MOVE SEMANTICS
+    BOTTLE-NECK AND MOVE SEMANTICS:
+    
     https://chatgpt.com/share/67350246-5dec-8002-825d-81b965ca92ef
 
     Go to---------->> rValue_lValue_references_example.cpp
