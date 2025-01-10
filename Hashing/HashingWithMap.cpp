@@ -16,7 +16,7 @@ int main(){
     cin >> qu;
 
 //PreCompute-- it can be merged with the for loop to take number into the array. It can save a for loop but wont affect the TC as much because its complexity changes from N+N TO N
-    unordered_map<int,int> mpp;
+    map<int,int> mpp;
     for(int i = 0; i<size;i++){
         mpp[arr[i]]++;
     }
