@@ -1,7 +1,7 @@
 //It will solve the problem where number is 1e9
 #include<bits/stdc++.h>
 using namespace std;
-//Maps stores value in sprted order
+//Maps stores value in sorted order
 int main(){
     int size;
     cout<<"Enter the size of array: "<<endl;
