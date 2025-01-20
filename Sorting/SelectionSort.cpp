@@ -25,6 +25,19 @@ void selection_sort(int arr[], int size){
         arr[minIndex] = arr[i];
         arr[i] = temp;
 
+        //If we swap within the inner loop then --->
+
+        //Consider an array arr = [3, 1, 4, 2].
+
+        // Correct Logic:
+        // Outer loop (i = 0): Inner loop finds the minimum (1), and swaps it with arr[0].
+        // Array becomes: [1, 3, 4, 2].
+        
+        // Incorrect Logic (Swap in Inner Loop):
+        // Outer loop (i = 0): As soon as arr[1] (value 1) is found to be less than arr[0] (value 3), you swap immediately.
+        // Array becomes: [1, 3, 4, 2] before completing the comparisons.
+        // Subsequent comparisons will proceed with a modified array, leading to unpredictable results.
+
     }
 
 }
