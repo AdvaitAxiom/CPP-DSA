@@ -25,7 +25,13 @@ using namespace std;
     //3rd swap: it cant be swapped with 9 anymore
     //So array is sorted
 
+/*for(iterating over each element){
+    each element's index is taken on another variable to compare 
+    while(is the element of taken index lesser than the previous )
+    swap elements
+    reduce the index once       [Because--> 12,14,11--> after swap-->12,11,14 but the checking index still will be on 14 which should be on 11]
 
+}*/
 
 void insertion_sort(int arr[],int size){
     for(int i = 0; i<=size-1;i++){
