@@ -26,8 +26,8 @@ using namespace std;
 //5th iteration--> 0-(n-5)
 
 void bubble_sort(int arr[],int size){
-        for(int i = size-1; i>=0;i--){
-                for(int j = 0; j<=i-1;j++){
+        for(int i = size-1; i>=0;i--){          //Creating the right limit in the array and after iteration reducing it because after every iteration the last element will be the highest element and it need not to be sorted
+                for(int j = 0; j<=i-1;j++){            // the loop should iterate from 0 to the right limited array in every iteration
                         if(arr[j]>arr[j+1]){
                                 int temp =arr[j];
                                 arr[j] = arr[j+1];
