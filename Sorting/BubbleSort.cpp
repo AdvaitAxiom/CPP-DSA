@@ -18,8 +18,48 @@ using namespace std;
 //2nd Iteration--> considered Array--> 13,24,46,20,9 [last ele is discarted as it is highest and sorted]
         //Redo adjacent compare and swaps 
 
+//n-size of array
+//1st iteration--> 0-(n-1)
+//2nd iteration--> 0-(n-2)
+//3rd iteration--> 0-(n-3)
+//4th iteration--> 0-(n-4)
+//5th iteration--> 0-(n-5)
+
+void bubble_sort(int arr[],int size){
+        for(int i = size-1; i>=0;i--){
+                for(int j = 0; j<=i-1;j++){
+                        if(arr[j]>arr[j+1]){
+                                int temp =arr[j];
+                                arr[j] = arr[j+1];
+                                arr[j+1] = temp;
+                        }
+                }
+        }
+}
 
 int main(){
+         int size;
+    cout<<"Enter Size of the Array: ";
+    cin>>size;
+    
+    int arr[size];
 
+    cout<<"Enter Elements: "<<endl;
+    for(int i= 0;i<size;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"Array is: "<<endl;
+    for(int i = 0; i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+
+    bubble_sort(arr,size);
+
+    cout<<endl<<"Sorted Array is: "<<endl;
+    for(int i = 0; i<size;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
     return 0;
 }
