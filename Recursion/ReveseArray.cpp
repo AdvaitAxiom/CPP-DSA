@@ -3,7 +3,7 @@
 
 void swaparr(int i,int arr[],int size){
     if(i>=size/2)return;
-    swap(arr[i],arr[size-i-1]);
+    swap(arr[i],arr[size-i-1]); //swap(arr[i],arr[n-1])--->TWO POINTER APPROACH
     swaparr(i+1,arr,size);
 }
  
