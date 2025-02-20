@@ -1,6 +1,7 @@
 //Print GFG n times
 #include<bits/stdc++.h>
 using namespace std;
+
 int counting = 1;
 void printGFG(int n){
     if(n<=0) return;
