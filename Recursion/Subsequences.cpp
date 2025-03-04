@@ -49,3 +49,9 @@ int main(){
     printSubseq(0,ds,arr,n);
     return 0;
 }
+
+//TIME COMPLEXITY--- FOR EVERY ELEMENT WE HAVE TWO OPTIONS 
+//O(2^N X N) (FOR PRINTING USING LOOP N)
+
+//SPACE COMPLEXITY---> MAX CAN GO TILL INDEX 2
+//O(N)
