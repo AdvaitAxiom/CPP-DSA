@@ -11,9 +11,9 @@ f(index,[]){
     ***TAKING AN ELEMENT***
     [].add(arr[i]);
     f(index+1,[]);
+    [].remove(arr[i]);
 
     ***NOT TAKING AN ELEMENT***
-    [].remove(arr[i]);
     f(ind+1,[]);
 }
 */
