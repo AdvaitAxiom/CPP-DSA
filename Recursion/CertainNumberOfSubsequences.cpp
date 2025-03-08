@@ -4,6 +4,9 @@ using namespace std;
 
 //RIGHT WAY
 int printSS(int ind, int s, int sum,int arr[], int n){
+    
+    //Condition not satisfied(Strictly done if array contains positives only)
+    if(s>sum) return 0;
     if(ind ==n){
         if(s == sum ){
             return 1;
