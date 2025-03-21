@@ -3,7 +3,7 @@ using namespace std;
 
 //BRUTEFORCE
 //1.Sort    (NlogN)
-//2. Store the last ele at a variable
+//2. Store the last ele at a variable(largest)
 //2. compare from 2nd last element and check if it not same as the largest
 
 //Pseudo Code
@@ -33,6 +33,8 @@ using namespace std;
 //2. iterate
 //3. if i >largest then slargest = largest and largest = new value
 //4. if i<largest then compare with slargest adn update it.
+
+//Time complexity--> O(n)
 int secondlargest(int arr[], int size){
 
     int largest = arr[0];
