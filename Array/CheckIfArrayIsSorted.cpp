@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool ifSorted(int arr[], int size)
+bool ifSorted(int arr[], int size)  //Time Complexity-->O(n)
 {
 
     for (int i = 1; i < size; i++)
