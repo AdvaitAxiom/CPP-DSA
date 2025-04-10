@@ -28,11 +28,11 @@ using namespace std;
 //Time complexity --> O(n)+ O(n) = O(2n)
 
 
-//OPTIMAL APPROACH(Assume thath there is no neg number)
+//OPTIMAL APPROACH(Assume that there is no neg number)
 //1. largest = arr[0] , slargest = -1
 //2. iterate
 //3. if i >largest then slargest = largest and largest = new value
-//4. if i<largest then compare with slargest adn update it.
+//4. if i<largest then compare with slargest and update it.
 
 //Time complexity--> O(n)
 int secondlargest(int arr[], int size){
