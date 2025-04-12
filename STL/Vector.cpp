@@ -312,6 +312,11 @@ int main(){
     return 0;
 }
 
+//vec.back()----> to access the last element of the vector 
+//vector<int> vec = {10, 20, 30, 40};
+
+// int lastElement = vec.back();  // gets the last element
+
 
 //GPT LINK------>>>>>>>
 //      |
