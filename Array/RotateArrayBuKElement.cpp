@@ -91,6 +91,18 @@ d = 3 so the first 3 elements = 1,2,3
 
     TOTAL TIME COMPLEXITY - O(2n)
     SPACE COMPLEXITY - 0(1)
+
+
+
+FOR VECTOR INPUT------------------------------------------>>>>>>>>>>>>>>>>>>>>>>
+void rotate(vector<int>& nums, int d) {
+        int size = nums.size();
+        int k = d%size;
+        if(size<=1) return;
+        reverse(nums.begin(), nums.end());
+        reverse(nums.begin(), nums.begin() + k);
+        reverse(nums.begin() + k, nums.end());
+    }
 */
 
 void leftRotate(int arr[],int size, int d){
