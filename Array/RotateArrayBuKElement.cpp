@@ -94,7 +94,7 @@ d = 3 so the first 3 elements = 1,2,3
 
 
 
-FOR VECTOR INPUT------------------------------------------>>>>>>>>>>>>>>>>>>>>>>
+FOR VECTOR INPUT && RIGHT ROTATE------------------------------------------>>>>>>>>>>>>>>>>>>>>>>
 void rotate(vector<int>& nums, int d) {
         int size = nums.size();
         int k = d%size;
