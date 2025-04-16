@@ -6,7 +6,7 @@ using namespace std;
 
 vector<int> moveZeros(int n, vector<int> a) {
     int j = -1;
-    //place the pointer j:
+    //place the pointer j:          O(x)
     for (int i = 0; i < n; i++) {
         if (a[i] == 0) {
             j = i;
@@ -17,7 +17,7 @@ vector<int> moveZeros(int n, vector<int> a) {
     //no non-zero elements:
     if (j == -1) return a;
 
-    //Move the pointers i and j
+    //Move the pointers i and j     O(n-x)
     //and swap accordingly:
     for (int i = j + 1; i < n; i++) {
         if (a[i] != 0) {
@@ -28,6 +28,7 @@ vector<int> moveZeros(int n, vector<int> a) {
     return a;
 }
 
+//TIME COMPLEXITY-->O(x)+O(n-x)=O(n)
 
 int main()
 {
