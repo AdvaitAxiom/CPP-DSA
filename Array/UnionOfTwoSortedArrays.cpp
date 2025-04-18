@@ -80,6 +80,13 @@ vector <int> doUnionTwoPointer(vector <int> &arr1, vector<int> &arr2){
 
     return Unionvec;
 }
+
+//IN First 2 cases we needed set and map to union so space complexity was - O(arr1+arr2) + O(arr1+arr2)(in worst case if all are unique elements in both of the arrays) and the second one is just to return not to calculate
+//Time complexity--- > O(arr1logn + arr2logs) (s = size of set or map that is changing)
+
+//OPTIMAL
+//In two pointer---> space complexity-- O(arr1 + arr2) (just to return not to calculate) in worst case
+//                  time complexity -- O(arr1+arr2) in worst case 
 int main(){
     vector <int> arr1;
     vector <int> arr2;
