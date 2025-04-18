@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void rotateLeft(vector<int>& nums, int k) {
+void rotateRight(vector<int>& nums, int k) {
     int n = nums.size();
     k = k % n;
     while (k--) {
@@ -21,7 +21,7 @@ int main(){
     }
     cout<<"How many times to rotate?"<<endl;
     cin>>k;
-    rotateLeft(arr,k);
+    rotateRight(arr,k);
 
     for(auto it: arr){
         cout<< it <<" ";

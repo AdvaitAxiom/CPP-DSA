@@ -45,7 +45,40 @@ vector<int> doUnionSet(vector<int> &arr1,vector<int> &arr2){
 
 //UNION USING TWO POINTERS
 vector <int> doUnionTwoPointer(vector <int> &arr1, vector<int> &arr2){
+    int a1s = arr1.size();
+    int a2s = arr2.size();
+    int i = 0;
+    int j = 0;
+    vector <int> Unionvec;
 
+    while(i<a1s && j<a2s){
+        if(arr1[i]<= arr2[j]){
+            if(Unionvec.size() != 0 || Unionvec.back() != arr1[i]){
+                Unionvec.push_back(arr1[i]);
+            }
+            i++;
+        }else{
+            if(Unionvec.size() != 0 || Unionvec.back() != arr2[j]){
+                Unionvec.push_back(arr2[j]);
+            }
+            j++;
+        }
+    }
+
+    while(j<a2s){
+        if(Unionvec.size() != 0 || Unionvec.back() != arr2[j]){
+            Unionvec.push_back(arr2[j]);
+        }
+        j++;
+    }
+    while(i<a1s){
+        if(Unionvec.size() != 0 || Unionvec.back() != arr1[i]){
+            Unionvec.push_back(arr1[i]);
+        }
+        i++;
+    }
+
+    return Unionvec;
 }
 int main(){
     vector <int> arr1;
@@ -64,8 +97,8 @@ int main(){
         arr2.push_back(val);
     }
 
-    vector<int> final = doUnionMap(arr1,arr2);
-    vector<int> final = doUnionSet(arr1,arr2);
+    // vector<int> final = doUnionMap(arr1,arr2);
+    // vector<int> final = doUnionSet(arr1,arr2);
     vector<int> final = doUnionTwoPointer(arr1,arr2);
 
     cout<<endl;
