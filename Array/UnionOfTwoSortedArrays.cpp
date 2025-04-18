@@ -53,12 +53,12 @@ vector <int> doUnionTwoPointer(vector <int> &arr1, vector<int> &arr2){
 
     while(i<a1s && j<a2s){
         if(arr1[i]<= arr2[j]){
-            if(Unionvec.size() != 0 || Unionvec.back() != arr1[i]){
+            if(Unionvec.size() == 0 || Unionvec.back() != arr1[i]){
                 Unionvec.push_back(arr1[i]);
             }
             i++;
         }else{
-            if(Unionvec.size() != 0 || Unionvec.back() != arr2[j]){
+            if(Unionvec.size() == 0 || Unionvec.back() != arr2[j]){
                 Unionvec.push_back(arr2[j]);
             }
             j++;
@@ -66,13 +66,13 @@ vector <int> doUnionTwoPointer(vector <int> &arr1, vector<int> &arr2){
     }
 
     while(j<a2s){
-        if(Unionvec.size() != 0 || Unionvec.back() != arr2[j]){
+        if(Unionvec.size() == 0 || Unionvec.back() != arr2[j]){
             Unionvec.push_back(arr2[j]);
         }
         j++;
     }
     while(i<a1s){
-        if(Unionvec.size() != 0 || Unionvec.back() != arr1[i]){
+        if(Unionvec.size() == 0 || Unionvec.back() != arr1[i]){
             Unionvec.push_back(arr1[i]);
         }
         i++;
