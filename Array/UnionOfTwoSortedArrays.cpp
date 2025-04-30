@@ -104,9 +104,9 @@ int main(){
         arr2.push_back(val);
     }
 
-    // vector<int> final = doUnionMap(arr1,arr2);
+    vector<int> final = doUnionMap(arr1,arr2);
     // vector<int> final = doUnionSet(arr1,arr2);
-    vector<int> final = doUnionTwoPointer(arr1,arr2);
+    // vector<int> final = doUnionTwoPointer(arr1,arr2);
 
     cout<<endl;
     for(auto it: final){
