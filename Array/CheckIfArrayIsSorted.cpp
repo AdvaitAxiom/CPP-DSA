@@ -1,17 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool ifSorted(int arr[], int size)  //Time Complexity-->O(n)
-{
-
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] >= arr[i - 1])
-        {
+bool ifSorted(int arr[], int size){  //Time Complexity-->O(n)
+    for (int i = 1; i < size; i++){
+        if (arr[i] >= arr[i - 1]){
             continue;
         }
-        else
-        {
+        else{
             return false;
         }
     }
@@ -24,17 +19,14 @@ bool check(vector<int> &nums)
     int countDrops = 0; // To count number of drops
     int n = nums.size();
 
-    for (int i = 1; i < n; i++)
-    {
-        if (nums[i] < nums[i - 1])
-        {
+    for (int i = 1; i < n; i++){
+        if (nums[i] < nums[i - 1]){
             countDrops++;
         }
     }
 
     // Also check the last and first element to account for rotation
-    if (nums[n - 1] > nums[0])
-    {
+    if (nums[n - 1] > nums[0]){
         countDrops++;
     }
 
@@ -69,16 +61,13 @@ int main()
     int arr[size];
     cout << "Enter the elements:";
 
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++){
         cin >> arr[i];
     }
-    if (ifSorted(arr, size) == true)
-    {
+    if (ifSorted(arr, size) == true){
         cout << "Array is sorted" << endl;
     }
-    else
-    {
+    else{
         cout << "Array is unsorted." << endl;
     }
     return 0;

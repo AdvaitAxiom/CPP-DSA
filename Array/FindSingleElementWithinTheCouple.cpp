@@ -16,3 +16,6 @@ int main(){
     cout << "The single element is: " << ans << endl;
     return 0;
 }
+
+//TIME COMPLEXITY-->O(N)    N= Size of the array
+//SPACE COMPLEXITY-->O(1)
