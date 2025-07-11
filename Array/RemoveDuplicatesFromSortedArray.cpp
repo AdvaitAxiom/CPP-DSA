@@ -6,7 +6,7 @@ using namespace std;
 //Using Unique and Erase--> O(n)
 void removeDup(int arr[], int size){
     vector<int> vec3(arr,arr+size);
-    vec3.erase(unique(vec3.begin(),vec3.end()),vec3.end());
+    vec3.erase(unique(vec3.begin(),vec3.end()),vec3.end()); //This rearranges the vector so that each unique (non-duplicate consecutive) element appears once at the front.It returns an iterator to the new logical end of the vector (i.e., where the duplicates start).
 
     for(auto i3: vec3){
         cout<< i3<<" ";
