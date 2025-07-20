@@ -19,5 +19,6 @@ int main(){
     cout<<"Number of iterations: ";
     cin>>n;
     printGFGpos(n);
+    printGFG(-n);
     return 0;
 }
