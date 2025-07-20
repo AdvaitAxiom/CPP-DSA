@@ -32,3 +32,5 @@ int main(){
 
     return 0;
 }
+
+//Or we can make the int size --> long long size = arr.size()+1;
