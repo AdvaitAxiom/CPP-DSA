@@ -1,7 +1,7 @@
 //{ Driver Code Starts
 #include<bits/stdc++.h> 
 using namespace std;
-
+//it counts how many digits of a number N divide N evenly (ignoring zero digits).
 // } Driver Code Ends
 class Solution{
 public:
