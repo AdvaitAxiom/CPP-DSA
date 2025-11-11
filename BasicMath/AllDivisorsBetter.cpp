@@ -4,7 +4,7 @@ using namespace std;
 void divisors(int number){
     vector<int> div;
     //O(sqrt(number))
-    for(int i=1; i<=sqrt(number); i++){
+    for(int i=1; i<=(int)sqrt(number); i++){
         if(number % i == 0 ){
             div.push_back(i);
             if(number/i != i){

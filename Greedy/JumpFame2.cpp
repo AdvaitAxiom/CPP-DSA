@@ -38,7 +38,7 @@ class Solution {
               if (i == currEnd) { // need to jump
                   jumps++;
                   currEnd = farthest;
-                  if (currEnd <= i) return -1; // stuck
+                  if (currEnd <= i) return -1; // stuck then check otherwise not
               }
           }
   

@@ -14,7 +14,7 @@ void removeDup(int arr[], int size){
 }
 
 //Using normal iterator
-void removeDup2(int arr[], int size){
+void removeDup2(int arr[], int size)
     vector <int> vec(arr,arr+size);
     // vector <int> vec;
     // vec.assign(arr,arr+size);
