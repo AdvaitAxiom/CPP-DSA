@@ -9,6 +9,11 @@ int linearSearch(vector<int>& nums, int target) {
             return i;
         }
     }
+    // for(auto it : nums){
+    //     if(it == target){
+    //         return distance(nums.begin(), find(nums.begin(), nums.end(), it));
+    //     }
+    // }
     return -1;
 }
 int main(){

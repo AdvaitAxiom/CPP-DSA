@@ -131,8 +131,8 @@ int main(){
     // leftrotate(arr,size,d);
     // leftRotate(arr,size,d);
     rightrotate(arr,size,d);
-    for(int i = 0;i<size;i++){
-        cout<<arr[i]<< " ";
+    for(auto it : arr){
+        cout<<it<< " ";
     }
     return 0;
 }

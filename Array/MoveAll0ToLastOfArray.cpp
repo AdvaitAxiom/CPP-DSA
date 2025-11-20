@@ -27,7 +27,6 @@ vector<int> moveZeros(int n, vector<int> a) {
     }
     return a;
 }
-
 //TIME COMPLEXITY-->O(x)+O(n-x)=O(n)
 
 int main()
