@@ -9,10 +9,18 @@
     if(n<=1)return n;
     return fibo(n-1)+fibo(n-2);
  }
+int fibhelper(int n, int a, int b){
+   if(n==0) return a;
+   if(n==1) return b;
+   return fibhelper(n-1,b,a+b);
+}
+ int fib(int n){
+   return fibhelper(n,0,1);
+ }
  int main(){
     int n;
     cout<<"Enter the number: "<<endl;
     cin >> n;
-    cout<<n<<" th fibo number is: "<<fibo(n);
+    cout<<n<<" th fibo number is: "<<fibo(n)<<endl<<fib(n);
     return 0;
  }

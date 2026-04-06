@@ -4,7 +4,7 @@ using namespace std;
 //SQUARE ROOT METHOD (BETTER THAN BRUT FORCE)
 void divisors(int number){
     int counter = 0;
-    //O(sqrt(number))
+    // //O(sqrt(number))
     for(int i=1; i<=sqrt(number); i++){
         if(number % i == 0 ){
             counter ++;
